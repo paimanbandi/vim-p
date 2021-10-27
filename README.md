@@ -25,7 +25,7 @@ mkdir $HOME/.config/nvim
 Clone the project
 
 ```zsh
-git clone https://github.com/paimanbandi/PaimanVim.git $HOME/.config/nvim
+git clone https://github.com/paimanbandi/vim-p.git $HOME/.config/nvim
 ```
 
 ### Docker

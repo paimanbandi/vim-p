@@ -30,6 +30,12 @@ git clone https://github.com/paimanbandi/vim-p.git $HOME/.config/nvim
 
 ### Docker
 
+Clone the project
+
+```zsh
+git clone https://github.com/paimanbandi/vim-p.git
+```
+
 Build the image
 
 ```zsh
@@ -41,3 +47,8 @@ Run the image
 ```zsh
 docker run -it --rm -v $(pwd):/usr/src/nvim vim-p [filename/directory]
 ```
+
+Create alias for **vim-p**
+
+	alias v="docker run -it --rm -v $(pwd):/usr/src/nvim vim-p"
+

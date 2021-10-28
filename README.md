@@ -25,10 +25,20 @@ mkdir $HOME/.config/nvim
 Clone the project
 
 ```zsh
-git clone https://github.com/paimanbandi/vim-p.git $HOME/.config/nvim
+git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $HOME/.config
+```
+
+### Run install.h
+
+If you don't have Neovim in your machine, you can run `install.sh` file.
+
+```zsh
+curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | sudo bash
 ```
 
 ### Docker
+
+If you prefer using Docker, then just clone this project, build and run the image.
 
 Clone the project
 
@@ -51,4 +61,14 @@ docker run -it --rm -v $(pwd):/usr/src/nvim vim-p [filename/directory]
 Create alias for **vim-p**
 
 	alias v="docker run -it --rm -v $(pwd):/usr/src/nvim vim-p"
+
+Example for usage the alias:
+
+```zsh
+v ./
+```
+
+```zsh
+v index.html
+```
 

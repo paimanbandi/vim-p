@@ -30,10 +30,10 @@ git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $
 
 ### Run install.h
 
-If you don't have Neovim in your machine, you can run `install.sh` file.
+If you don't have Neovim in your machine, you can run this command:
 
 ```zsh
-curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | sudo bash
+curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | bash
 ```
 
 ### Docker

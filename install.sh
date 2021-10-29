@@ -52,7 +52,7 @@ if [ -d "vim-p/" ]; then
   echo "vim-p directory is exist"; exit 2;
 fi
 echo "Cloning the vim-p repo..."
-git clone https://github.com/paimanbandi/vim-p.git && mv vim-p/.config/nvim $HOME/.config
+git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $HOME/.config && rm -rf vim-p &
 spinner
 
 echo "Installing packer.nvim..."

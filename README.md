@@ -1,6 +1,6 @@
 # Vim-P
 
-My personal Neovim configuration.
+P for Paiman. This is my personal Neovim configuration.
 
 ## Installation
 
@@ -20,21 +20,24 @@ Create folder `nvim`
     mkdir $HOME/.config/nvim
 
 
-Clone the project
+Clone the project and copy to `.config` folder
 
     git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $HOME/.config
 
 
-Install the dependencies
+Install the plugins
 
     nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 
 Activate the plugins
 
-    mv $HOME/.config/nvim/init.lua $HOME/.config/nvim/init.lua.BAK
+    mv $HOME/.config/nvim/init.lua $HOME/.config/nvim/init.lua.BAK && mv $HOME/.config/nvim/init-plugins.lua $HOME/.config/nvim/init.lua
 
-    mv $HOME/.config/nvim/init-plugins.lua $HOME/.config/nvim/init.lua
+
+Run your Neovim
+
+    nvim
 
 
 ### Docker
@@ -79,9 +82,10 @@ Example for usage the alias:
 - Mac OS or Linux
 
 
-If you don't have Neovim or Docker in your machine, then you can run this command:
+If you don't have Neovim or Docker in your machine, or you have them but you want something simple, then you can run this single command:
 
     curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | bash
 
 
-It will install Neovim 0.5.1 and setup the configuration automatically.
+This will install Neovim 0.5.1, backup your current configuration (if you have), and setup the configuration automatically.
+

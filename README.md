@@ -2,73 +2,86 @@
 
 My personal Neovim configuration.
 
-## Prerequisite
-
-- Neovim >= 0.5 or Docker
-
 ## Installation
 
 ### Manual
 
+#### Prerequisite
+
+- Neovim >= 0.5
+
 Back up existing Neovim configuration
 
-```zsh
-mv $HOME/.config/nvim $HOME/.config/nvim.BAK
-```
+    mv $HOME/.config/nvim $HOME/.config/nvim.BAK
+
 
 Create folder `nvim`
 
-```zsh
-mkdir $HOME/.config/nvim
-```
+    mkdir $HOME/.config/nvim
+
 
 Clone the project
 
-```zsh
-git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $HOME/.config
-```
+    git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $HOME/.config
 
-### Run install.h
 
-If you don't have Neovim in your machine, you can run this command:
+Install the dependencies
 
-```zsh
-curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | bash
-```
+    nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
+
+Activate the plugins
+
+    mv $HOME/.config/nvim/init.lua $HOME/.config/nvim/init.lua.BAK
+
+    mv $HOME/.config/nvim/init-plugins.lua $HOME/.config/nvim/init.lua
+
 
 ### Docker
+
+#### Prerequisite
+
+- Docker
 
 If you prefer using Docker, then just clone this project, build and run the image.
 
 Clone the project
 
-```zsh
-git clone https://github.com/paimanbandi/vim-p.git
-```
+    git clone https://github.com/paimanbandi/vim-p.git
+
 
 Build the image
 
-```zsh
-docker build -t vim-p .
-```
+    docker build -t vim-p .
+
 
 Run the image
 
-```zsh
-docker run -it --rm -v $(pwd):/usr/src/nvim vim-p [filename/directory]
-```
+    docker run -it --rm -v $(pwd):/usr/src/nvim vim-p [filename/directory]
+
 
 Create alias for **vim-p**
 
-	alias v="docker run -it --rm -v $(pwd):/usr/src/nvim vim-p"
+    alias v="docker run -it --rm -v $(pwd):/usr/src/nvim vim-p"
+
 
 Example for usage the alias:
 
-```zsh
-v ./
-```
+    v ./
 
-```zsh
-v index.html
-```
+    v index.html
 
+
+### Run install.h
+
+#### Prerequisite
+
+- Mac OS or Linux
+
+
+If you don't have Neovim or Docker in your machine, then you can run this command:
+
+    curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | bash
+
+
+It will install Neovim 0.5.1 and setup the configuration automatically.

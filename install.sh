@@ -18,7 +18,9 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   echo "Installing Neovim..."
   wget -O nvim-macos.tar.gz https://github.com/neovim/neovim/releases/download/stable/nvim-macos.tar.gz &
   spinner
-  tar xzvf nvim-macos.tar.gz &
+  tar xzf nvim-macos.tar.gz &
+  spinner
+  rm -f nvim-macos.tar.gz &
   spinner
   chmod -R 777 nvim-osx64
   export PATH=$PWD/nvim-osx64/bin:$PATH &
@@ -29,8 +31,9 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   echo "Installing Neovim..."
   wget -O nvim-linux64.tar.gz https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz &
   spinner
-  tar xzvf nvim-linux64.tar.gz &
+  tar xzf nvim-linux64.tar.gz &
   spinner
+  rm -f nvim-linux64.tar.gz &
   chmod -R 777 nvim-linux64
   export PATH=$PWD/nvim-linux64/bin:$PATH &
   spinner
@@ -49,7 +52,7 @@ if [ -d "vim-p/" ]; then
   echo "vim-p directory is exist"; exit 2;
 fi
 echo "Cloning the vim-p repo..."
-git clone https://github.com/paimanbandi/vim-p.git && cp -r vim-p/.config/nvim $HOME/.config
+git clone https://github.com/paimanbandi/vim-p.git && mv vim-p/.config/nvim $HOME/.config
 spinner
 
 echo "Installing packer.nvim..."

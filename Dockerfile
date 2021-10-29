@@ -4,7 +4,6 @@ LABEL maintainer="Paiman <paiman.bandi@gmail.com>"
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV HOME /root
-ENV ZSH_CUSTOM $HOME/.oh-my-zsh/custom/
 
 WORKDIR $HOME
 

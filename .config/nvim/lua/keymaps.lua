@@ -9,7 +9,7 @@ m("n", "<leader>x" , ":qa<CR>" , o)
 m("n", "<leader>xx", ":qa!<CR>", o)
 m("n", "<C-n>", ":NvimTreeToggle<CR>", o)
 
-m("n", "<C-t>", ":ToggleTerm<CR>", o)
+m("n", "<C-t>", ":RnvimrToggle<CR>", o)
 
 m("n", "<C-h>", "<C-w>h", s)
 m("n", "<C-j>", "<C-w>j", s)
@@ -49,7 +49,4 @@ m("n", "K"        , "<Cmd>lua vim.lsp.buf.hover()<CR>", o)
 m("n", "gd"       , "<Cmd>lua vim.lsp.buf.definition()<CR>", o)
 m("n", "<leader>a", "<Cmd>lua vim.lsp.buf.code_action()<CR>", o)
 m("n", "<leader>a", "<Cmd>lua vim.lsp.buf.range_code_action()<CR>", o)
-
-
-
 

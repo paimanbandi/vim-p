@@ -89,3 +89,19 @@ If you don't have Neovim or Docker in your machine, or you have them but you wan
 
 This will install Neovim 0.5.1, backup your current configuration (if you have), and setup the configuration automatically.
 
+
+## Key Bindings
+
+My value of <Leader> key is <Space>, if you want to change this key, just go to `.config/nvim/lua/settings.lua` and edit the value of mapleader.
+
+    g.mapleader = ' '
+
+
+| Mode   | Key               | Action                                     |
+|--------|-------------------|--------------------------------------------|
+| Normal | Ctrl-n            | Open/Close the file explorer tree          |
+| Normal | TAB               | Open next file tab                         |
+| Normal | Shift-TAB         | Open previous file tab                     |
+| Normal | Ctrl-q            | Quit                                       |
+| Normal | Ctrl-x            | Quit all                                   |
+| Insert | hh / HH           | Escape                                     |

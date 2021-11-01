@@ -1,11 +1,5 @@
-local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-end
-
 return require('packer').startup(function(use)
-
+  -- package manager
   use 'wbthomason/packer.nvim'
 
   -- theme
@@ -22,6 +16,8 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+
+  -- snippet
   use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
   use 'L3MON4D3/LuaSnip'
@@ -39,37 +35,37 @@ return require('packer').startup(function(use)
       'hrsh7th/cmp-emoji'
     }
   }
+
+  -- debugging
+  use 'Pocco81/DAPInstall.nvim'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
+  -- ui
   use {
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
   use 'beauwilliams/statusline.lua'
-
-  use 'Pocco81/AutoSave.nvim'
   use 'luochen1990/rainbow'
-  use 'b3nj5m1n/kommentary'
-
-  use 'RRethy/vim-illuminate'
-
-
-  use 'norcalli/nvim-colorizer.lua'
-  use 'vim-syntastic/syntastic'
-
-  -- git
-  use 'tveskag/nvim-blame-line'
-  use 'mhinz/vim-signify'
-  use 'kdheepak/lazygit.nvim'
-
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use "lukas-reineke/indent-blankline.nvim"
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'RRethy/vim-illuminate'
+  use 'norcalli/nvim-colorizer.lua'
+  use 'vim-syntastic/syntastic'
+  use 'numtostr/FTerm.nvim'
+  use 'Pocco81/AutoSave.nvim'
+  use 'b3nj5m1n/kommentary'
+  use 'mhartington/formatter.nvim'
+
+  -- git
+  use 'tveskag/nvim-blame-line'
+  use 'mhinz/vim-signify'
+
 
   -- flutter
   use 'dart-lang/dart-vim-plugin'
   use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
-  if packer_bootstrap then
-    require('packer').sync()
-  end
 end)

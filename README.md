@@ -96,7 +96,9 @@ This will install Neovim 0.5.1, backup your current configuration (if you have),
 - Colorscheme using [onedark.vim](https://github.com/joshdick/onedark.vim)
 - File manager using [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - Syntax highlighting using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- Syntax checking using [syntastic](https://github.com/vim-syntastic/syntastic)
 - Auto-completion using [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- Debugging using [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 - Statusline using [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - Indentation lines using [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - Comment/Uncomment text using [kommentary](https://github.com/b3nj5m1n/kommentary)
@@ -121,6 +123,9 @@ My value of `<Leader>` key is `<Space>`, if you want to change this key, just go
 | Normal | TAB               | Open next file tab                         |
 | Normal | Shift-TAB         | Open previous file tab                     |
 | Normal | Ctrl-q            | Quit                                       |
+| Normal | Ctrl-qx           | Force quit                                 |
 | Normal | Ctrl-x            | Quit all                                   |
-| Normal | gcc               | Comment/Uncomment                          |
+| Normal | Ctrl-xx           | Force quit all                             |
+| Normal | gc                | Comment/Uncomment code                     |
+| Normal | Leader-dh         | Toggle Breakpoint                          |
 | Insert | hh / HH           | Escape                                     |

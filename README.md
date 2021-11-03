@@ -40,7 +40,9 @@ Run your Neovim
 
 - Docker
 
-If you prefer using Docker, then just clone this project, build and run the image.
+#### Building Image Manually
+
+To build the Docker image manually: just clone this project, build and run the image.
 
 Clone the project
 
@@ -63,6 +65,10 @@ Example for usage the alias:
     v ./
 
     v index.html
+
+#### Pulling Image from Docker Hub
+
+    docker pull paiman/vim-p
 
 ### Run install.h
 

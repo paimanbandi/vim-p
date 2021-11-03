@@ -9,8 +9,6 @@ m("n", "<leader>x", ":qa<CR>", o)
 m("n", "<leader>xx", ":qa!<CR>", o)
 m("n", "<C-n>", ":NvimTreeToggle<CR>", o)
 
-m("n", "<C-t>", ":RnvimrToggle<CR>", o)
-
 m("n", "<C-h>", "<C-w>h", s)
 m("n", "<C-j>", "<C-w>j", s)
 m("n", "<C-k>", "<C-w>k", s)

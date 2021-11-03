@@ -55,18 +55,20 @@ return require('packer').startup(function(use)
   use 'RRethy/vim-illuminate'
   use 'norcalli/nvim-colorizer.lua'
   use 'vim-syntastic/syntastic'
+
+  -- git
+  use 'tveskag/nvim-blame-line'
+  use 'mhinz/vim-signify'
+
+  -- flutter
+  use 'dart-lang/dart-vim-plugin'
+  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
+  -- others
   use 'numtostr/FTerm.nvim'
   use 'Pocco81/AutoSave.nvim'
   use 'b3nj5m1n/kommentary'
   use 'mhartington/formatter.nvim'
   use 'karb94/neoscroll.nvim'
 
-  -- git
-  use 'tveskag/nvim-blame-line'
-  use 'mhinz/vim-signify'
-
-
-  -- flutter
-  use 'dart-lang/dart-vim-plugin'
-  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 end)

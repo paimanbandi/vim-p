@@ -101,7 +101,7 @@ This will install Neovim 0.5.1, backup your current configuration (if you have),
 - Color code highlighter using [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 - Floating terminal using [FTerm](https://github.com/numToStr/FTerm.nvim)
 - Smooth scrolling using [Neoscroll](https://github.com/karb94/neoscroll.nvim)
-- File/text finder using [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- Fuzzy finder using [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Key Bindings
 
@@ -127,3 +127,5 @@ My value of `<Leader>` key is `<Space>`, if you want to change this key, just go
 | Normal | Leader-nf             | Unfold code                      |
 | Insert | hh / HH               | Escape                           |
 | Insert | TAB (Auto-completion) | Auto select the first suggestion |
+| Visual | >                     | Next indent                      |
+| Visual | <                     | Previous indent                  |

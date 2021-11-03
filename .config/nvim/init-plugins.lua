@@ -1,5 +1,6 @@
 R = require
 R "settings"
+R "autocmd"
 R "keymaps"
 R "colorscheme"
 R "plugins.init"

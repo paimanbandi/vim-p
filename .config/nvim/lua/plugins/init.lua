@@ -3,7 +3,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- theme
-  use 'joshdick/onedark.vim'
+  use 'ghifarit53/tokyonight-vim'
 
   -- file manager
   use {

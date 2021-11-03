@@ -33,7 +33,7 @@ opt.history = 1000
 opt.lazyredraw = true
 opt.synmaxcol = 240
 
-opt.termguicolors = true
+
 
 
 opt.expandtab = true

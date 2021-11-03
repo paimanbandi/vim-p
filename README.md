@@ -100,6 +100,8 @@ This will install Neovim 0.5.1, backup your current configuration (if you have),
 - Statusline using [statusline.lua](https://github.com/beauwilliams/statusline.lua)
 - Color code highlighter using [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 - Floating terminal using [FTerm](https://github.com/numToStr/FTerm.nvim)
+- Smooth scrolling using [Neoscroll](https://github.com/karb94/neoscroll.nvim)
+- File/text finder using [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Key Bindings
 
@@ -107,16 +109,21 @@ My value of `<Leader>` key is `<Space>`, if you want to change this key, just go
 
     g.mapleader = ' '
 
-| Mode   | Key       | Action                       |
-| ------ | --------- | ---------------------------- |
-| Normal | Ctrl-n    | Open/Close the file manager  |
-| Normal | TAB       | Open next file tab           |
-| Normal | Shift-TAB | Open previous file tab       |
-| Normal | Ctrl-q    | Quit                         |
-| Normal | Ctrl-qx   | Force quit                   |
-| Normal | Ctrl-x    | Quit all                     |
-| Normal | Ctrl-xx   | Force quit all               |
-| Normal | gcc       | Comment/Uncomment code       |
-| Normal | F12       | Open/close floating terminal |
-| Normal | Leader-dh | Toggle Breakpoint            |
-| Insert | hh / HH   | Escape                       |
+| Mode   | Key                   | Action                           |
+| ------ | --------------------- | -------------------------------- |
+| Normal | Ctrl-n                | Open/Close the file manager      |
+| Normal | TAB                   | Open next file tab               |
+| Normal | Shift-TAB             | Open previous file tab           |
+| Normal | Ctrl-q                | Quit                             |
+| Normal | Ctrl-qx               | Force quit                       |
+| Normal | Ctrl-x                | Quit all                         |
+| Normal | Ctrl-xx               | Force quit all                   |
+| Normal | gcc                   | Comment/Uncomment code           |
+| Normal | F12                   | Open/close floating terminal     |
+| Normal | Leader-dh             | Toggle Breakpoint                |
+| Normal | Leader-ff             | Find file                        |
+| Normal | Leader-fg             | Find text                        |
+| Normal | Leader-fe             | Fold code                        |
+| Normal | Leader-nf             | Unfold code                      |
+| Insert | hh / HH               | Escape                           |
+| Insert | TAB (Auto-completion) | Auto select the first suggestion |

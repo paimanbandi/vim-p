@@ -59,6 +59,7 @@ return require('packer').startup(function(use)
   use 'Pocco81/AutoSave.nvim'
   use 'b3nj5m1n/kommentary'
   use 'mhartington/formatter.nvim'
+  use 'karb94/neoscroll.nvim'
 
   -- git
   use 'tveskag/nvim-blame-line'

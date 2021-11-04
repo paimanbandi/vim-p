@@ -5,6 +5,7 @@ return require('packer').startup(function(use)
   -- theme
   use 'Mofiqul/vscode.nvim'
   use 'martinsione/darkplus.nvim'
+  use 'Mofiqul/dracula.nvim'
 
   -- file manager
   use {

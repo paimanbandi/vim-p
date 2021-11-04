@@ -2,8 +2,7 @@ local cmd = vim.cmd
 local g = vim.g
 local opt = vim.opt
 
-cmd('colorscheme onedark')
+cmd('colorscheme uwu')
 
 opt.termguicolors = true
 
-g.onedark_style = 'darker'

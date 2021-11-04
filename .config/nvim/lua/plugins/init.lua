@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
   use 'ghifarit53/tokyonight-vim'
   use 'marko-cerovac/material.nvim'
   use 'navarasu/onedark.nvim'
+  use { 'mangeshrex/uwu.vim' }
 
   -- file manager
   use {

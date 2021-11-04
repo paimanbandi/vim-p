@@ -102,6 +102,8 @@ This will install Neovim 0.5.1, backup your current configuration (if you have),
 - Floating terminal using [FTerm](https://github.com/numToStr/FTerm.nvim)
 - Smooth scrolling using [Neoscroll](https://github.com/karb94/neoscroll.nvim)
 - Fuzzy finder using [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- Git sign indicator using [vim-signify](https://github.com/mhinz/vim-signify)
+- Git blame using [nvim-blame-line](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Key Bindings
 

@@ -18,7 +18,7 @@ require("formatter").setup(
           return {
             exe = "eslint",
             args = {"--stdin-filename", vim.api.nvim_buf_get_name(0), "--fix", "--cache"},
-            stdin = false
+            stdin = true
           }
         end
       },

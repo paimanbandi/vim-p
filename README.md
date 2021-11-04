@@ -86,7 +86,6 @@ This will install Neovim 0.5.1, backup your current configuration (if you have),
 
 - Colorscheme using [tokyonight-vim](https://github.com/ghifarit53/tokyonight-vim)
 - File manager using [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-- Syntax highlighting using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Syntax checking using [syntastic](https://github.com/vim-syntastic/syntastic)
 - Auto-completion using [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Debugging using [nvim-dap](https://github.com/mfussenegger/nvim-dap)

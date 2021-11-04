@@ -4,6 +4,7 @@ return require('packer').startup(function(use)
 
   -- theme
   use 'Mofiqul/vscode.nvim'
+  use 'martinsione/darkplus.nvim'
 
   -- file manager
   use {
@@ -12,10 +13,7 @@ return require('packer').startup(function(use)
   }
 
   -- syntax highlighting
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
+  use 'pangloss/vim-javascript'
 
   -- snippet
   use 'neovim/nvim-lspconfig'

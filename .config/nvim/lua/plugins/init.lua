@@ -4,6 +4,7 @@ return require('packer').startup(function(use)
 
   -- theme
   use 'ghifarit53/tokyonight-vim'
+  use 'marko-cerovac/material.nvim'
 
   -- file manager
   use {

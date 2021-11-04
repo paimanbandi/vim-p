@@ -3,7 +3,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- theme
-  use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+  use 'Mofiqul/vscode.nvim'
 
   -- file manager
   use {

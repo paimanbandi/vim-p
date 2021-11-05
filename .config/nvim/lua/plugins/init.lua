@@ -70,10 +70,11 @@ return require('packer').startup(function(use)
   use 'mhartington/formatter.nvim'
   use 'karb94/neoscroll.nvim'
   use {
-  "max397574/better-escape.nvim",
-  config = function()
-    require("better_escape").setup()
-  end,
-}
+    "max397574/better-escape.nvim",
+    config = function()
+      require("better_escape").setup()
+    end,
+  }
+  use {'edluffy/specs.nvim'}
 
 end)

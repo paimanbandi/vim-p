@@ -1,6 +1,7 @@
 local cmd = vim.cmd
 local opt = vim.opt
+local g = vim.g
 
 opt.termguicolors = true
-vim.g.dracula_show_end_of_buffer = true
-cmd('colorscheme dracula')
+cmd('colorscheme vscode')
+g.vscode_style = "dark"

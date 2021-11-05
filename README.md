@@ -90,7 +90,6 @@ This will install Neovim 0.5.1, backup your current configuration (if you have),
 - Auto-completion using [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Debugging using [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 - Statusline using [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- Indentation lines using [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - Comment/Uncomment text using [kommentary](https://github.com/b3nj5m1n/kommentary)
 - Autosaving using [AutoSave.nvim](https://github.com/Pocco81/AutoSave.nvim)
 - Rainbow parentheses using [rainbow](https://github.com/luochen1990/rainbow)

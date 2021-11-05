@@ -3,7 +3,7 @@ local g = vim.g
 local opt = vim.opt
 
 g.mapleader = ' '
-g.indentLine_char = '|'
+g.indentLine_char = '¦'
 
 opt.mouse = 'a'
 opt.clipboard = 'unnamedplus'
@@ -29,5 +29,4 @@ opt.tabstop = 2
 opt.smartindent = true
 
 opt.completeopt = 'menuone,noselect,noinsert'
-
 

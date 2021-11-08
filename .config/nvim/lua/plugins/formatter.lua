@@ -1,13 +1,3 @@
-vim.api.nvim_exec(
-  [[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost *.js,*.json,*.rs,*.go,*.java,*.rs,*.sh,*.lua,*.css,*.ts,*.php,*.tsx,*.jsx,*.md,*.html,*.scss FormatWrite
-augroup END
-]],
-  true
-)
-
 require("formatter").setup(
   {
     logging = false,
@@ -22,26 +12,6 @@ require("formatter").setup(
           }
         end
       },
-      php = {
-        -- prettier
-        function()
-          return {
-            exe = "prettier",
-            args = {"--stdin-filepath", vim.api.nvim_buf_get_name(0), "--single-quote"},
-            stdin = true
-          }
-        end
-      },
-      go = {
-        -- gofmt
-        function()
-          return {
-            exe = "gofmt",
-            --args = {"-w"},
-            stdin = true
-          }
-        end
-      },
       markdown = {
         -- prettier
         function()
@@ -53,16 +23,6 @@ require("formatter").setup(
         end
       },
       javascriptreact = {
-        -- prettier
-        function()
-          return {
-            exe = "prettier",
-            args = {"--stdin-filepath", vim.api.nvim_buf_get_name(0), "--single-quote"},
-            stdin = true
-          }
-        end
-      },
-      java = {
         -- prettier
         function()
           return {
@@ -142,16 +102,6 @@ require("formatter").setup(
           }
         end
       },
-      rust = {
-        -- Rustfmt
-        function()
-          return {
-            exe = "rustfmt",
-            args = {"--emit=stdout"},
-            stdin = true
-          }
-        end
-      },
       sh = {
         -- shfmt
         function()
@@ -159,17 +109,6 @@ require("formatter").setup(
             exe = "shfmt",
             args = {"-l", "-w"},
             stdin = false
-          }
-        end
-      },
-      cpp = {
-        -- clang-format
-        function()
-          return {
-            exe = "clang-format",
-            args = {},
-            stdin = true,
-            cwd = vim.fn.expand("%:p:h") -- Run clang-format in cwd of the file.
           }
         end
       }

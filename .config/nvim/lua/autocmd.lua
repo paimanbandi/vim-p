@@ -24,9 +24,3 @@ cmd[[autocmd FileType markdown let g:indentLine_enabled=0]]
 
 cmd[[autocmd BufEnter * EnableBlameLine]]
 
-cmd[[
-  augroup Format
-    autocmd!
-    autocmd BufWritePost * FormatWrite
-  augroup END
-]]

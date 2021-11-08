@@ -28,9 +28,9 @@ local on_attach = function(client, bufnr)
 
 if client.resolved_capabilities.document_formatting then
   vim.api.nvim_exec([[
-    augroup LspAutocommands
-      autocmd! * <buffer>
-      autocmd BufWritePost <buffer> LspFormatting
+    augroup Format
+      autocmd!
+      autocmd BufWritePost * FormatWrite
     augroup END
     ]], true)
   end

@@ -3,9 +3,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- theme
-  use 'Mofiqul/vscode.nvim'
-  use 'martinsione/darkplus.nvim'
-  use 'Mofiqul/dracula.nvim'
+  use 'paimanbandi/tentara.nvim'
 
   -- file manager
   use {

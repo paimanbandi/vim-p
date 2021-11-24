@@ -46,7 +46,10 @@ return require('packer').startup(function(use)
   use 'luochen1990/rainbow'
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope-live-grep-raw.nvim'
+    }
   }
   use 'lukas-reineke/indent-blankline.nvim'
   use 'RRethy/vim-illuminate'

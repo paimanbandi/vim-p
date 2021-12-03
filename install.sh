@@ -16,7 +16,7 @@ spinner()
 
 if [[ $OSTYPE == 'darwin'* ]]; then
   echo "Installing Neovim..."
-  wget -O nvim-macos.tar.gz https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz &
+  wget -O nvim-macos.tar.gz https://github.com/neovim/neovim/releases/download/v0.6.0/nvim-macos.tar.gz &
   spinner
   tar xzf nvim-macos.tar.gz &
   spinner
@@ -29,7 +29,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   spinner
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   echo "Installing Neovim..."
-  wget -O nvim-linux64.tar.gz https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz &
+  wget -O nvim-linux64.tar.gz https://github.com/neovim/neovim/releases/download/v0.6.0/nvim-linux64.tar.gz &
   spinner
   tar xzf nvim-linux64.tar.gz &
   spinner

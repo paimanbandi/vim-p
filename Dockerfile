@@ -17,7 +17,7 @@ RUN apt install -y \
 	fzf \
 	ripgrep
 
-RUN wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
+RUN wget https://github.com/neovim/neovim/releases/download/v0.6.0/nvim-linux64.tar.gz
 RUN tar xzvf nvim-linux64.tar.gz
 RUN export PATH=$HOME/nvim-linux64/bin:$PATH
 RUN ln -s $HOME/nvim-linux64/bin/nvim /usr/local/bin

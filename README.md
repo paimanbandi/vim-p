@@ -80,7 +80,7 @@ If you don't have Neovim or Docker in your machine, or you have them but you wan
 
     curl https://raw.githubusercontent.com/paimanbandi/vim-p/master/install.sh | bash
 
-This will install Neovim v0.6.0-dev, backup your current configuration (if you have), and setup the configuration automatically.
+This will install Neovim v0.6.0, backup your current configuration (if you have), and setup the configuration automatically.
 
 ## Plugins
 

@@ -47,3 +47,6 @@ m("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", o)
 m("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", o)
 m("n", "<leader>a", "<Cmd>lua vim.lsp.buf.code_action()<CR>", o)
 m("n", "<leader>a", "<Cmd>lua vim.lsp.buf.range_code_action()<CR>", o)
+
+m("n", "<leader>ow", ":FlutterOutlineToggle<CR>", o)
+

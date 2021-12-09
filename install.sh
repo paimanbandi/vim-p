@@ -47,7 +47,10 @@ if [ -d "$HOME/.config/nvim" ]; then
   echo "Backing up the nvim folder..."
   mv $HOME/.config/nvim $HOME/.config/nvim_$(date +%Y%m%d_%H%M%S) &
   spinner
+else
+  mkdir -p $HOME/.config/nvim
 fi
+
 if [ -d "vim-p/" ]; then
   echo "vim-p directory is exist"; exit 2;
 fi

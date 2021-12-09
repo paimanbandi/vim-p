@@ -70,7 +70,7 @@ Example for usage the alias:
 
     docker pull paiman/vim-p
 
-### Run install.h
+### Run install.sh
 
 #### Prerequisite
 

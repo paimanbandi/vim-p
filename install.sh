@@ -25,39 +25,6 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   chmod -R 777 nvim-osx64
   export PATH=$PWD/nvim-osx64/bin:$PATH &
   spinner
-  unset PASSWORD
-  unset CHARCOUNT
-
-  echo -n "Enter password: "
-
-  stty -echo
-
-  CHARCOUNT=0
-  while IFS= read -p "$PROMPT" -r -s -n 1 CHAR
-  do
-      # Enter - accept password
-      if [[ $CHAR == $'\0' ]] ; then
-          break
-      fi
-      # Backspace
-      if [[ $CHAR == $'\177' ]] ; then
-          if [ $CHARCOUNT -gt 0 ] ; then
-              CHARCOUNT=$((CHARCOUNT-1))
-              PROMPT=$'\b \b'
-              PASSWORD="${PASSWORD%?}"
-          else
-              PROMPT=''
-          fi
-      else
-          CHARCOUNT=$((CHARCOUNT+1))
-          PROMPT='*'
-          PASSWORD+="$CHAR"
-      fi
-  done
-
-  stty echo
-
-  echo $PASSWORD | sudo -S chown -R $(whoami) /usr/local/bin
   ln -sf $PWD/nvim-osx64/bin/nvim /usr/local/bin &
   spinner
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
@@ -70,39 +37,6 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   chmod -R 777 nvim-linux64
   export PATH=$PWD/nvim-linux64/bin:$PATH &
   spinner
-  unset PASSWORD
-  unset CHARCOUNT
-
-  echo -n "Enter password: "
-
-  stty -echo
-
-  CHARCOUNT=0
-  while IFS= read -p "$PROMPT" -r -s -n 1 CHAR
-  do
-      # Enter - accept password
-      if [[ $CHAR == $'\0' ]] ; then
-          break
-      fi
-      # Backspace
-      if [[ $CHAR == $'\177' ]] ; then
-          if [ $CHARCOUNT -gt 0 ] ; then
-              CHARCOUNT=$((CHARCOUNT-1))
-              PROMPT=$'\b \b'
-              PASSWORD="${PASSWORD%?}"
-          else
-              PROMPT=''
-          fi
-      else
-          CHARCOUNT=$((CHARCOUNT+1))
-          PROMPT='*'
-          PASSWORD+="$CHAR"
-      fi
-  done
-
-  stty echo
-
-  echo $PASSWORD | sudo -S chown -R $(whoami) /usr/local/bin
   ln -sf $PWD/nvim-linux64/bin/nvim /usr/local/bin &
   spinner
 else

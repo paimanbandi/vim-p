@@ -25,6 +25,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   chmod -R 777 nvim-osx64
   export PATH=$PWD/nvim-osx64/bin:$PATH &
   spinner
+  sudo chown -R $(whoami) /usr/local/bin &
   ln -sf $PWD/nvim-osx64/bin/nvim /usr/local/bin &
   spinner
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
@@ -37,6 +38,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   chmod -R 777 nvim-linux64
   export PATH=$PWD/nvim-linux64/bin:$PATH &
   spinner
+  sudo chown -R $(whoami) /usr/local/bin &
   ln -sf $PWD/nvim-linux64/bin/nvim /usr/local/bin &
   spinner
 else

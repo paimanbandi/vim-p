@@ -64,6 +64,11 @@ return require('packer').startup(function(use)
   use 'dart-lang/dart-vim-plugin'
   use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 
+  -- haskell
+  use {
+    'ndmitchell/ghcid', { rtp = 'plugins/nvim' }
+  }
+
   -- others
   use 'numtostr/FTerm.nvim'
   use 'Pocco81/AutoSave.nvim'

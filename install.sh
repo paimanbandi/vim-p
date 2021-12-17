@@ -60,7 +60,7 @@ spinner
 
 echo "Installing packer.nvim..."
 if [ -d "$HOME/.local/share/nvim/site/pack/packer" ]; then
-  mv $HOME/.local/share/nvim/site/pack/packer $HOME/.local/share/nvim/site/pack/packer_$(date +%Y%m%d_%H%M%S) &
+  rm -rf $HOME/.local/share/nvim/site/pack/packer &
   spinner
 fi
 

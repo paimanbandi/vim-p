@@ -25,7 +25,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   chmod -R 777 nvim-osx64
   export PATH=$PWD/nvim-osx64/bin:$PATH &
   spinner
-  ln -sf $PWD/nvim-osx64/bin/nvim /usr/local/bin &
+  ln -sf $PWD/nvim-osx64/bin/nvim /opt/local/bin &
   spinner
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   echo "Installing Neovim..."

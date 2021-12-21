@@ -125,6 +125,7 @@ My value of `<Leader>` key is `<Space>`, if you want to change this key, just go
 | Normal | Leader-fg             | Find text                        |
 | Normal | Leader-fe             | Fold code                        |
 | Normal | Leader-nf             | Unfold code                      |
+| Normal | Leader-nh             | Clear Highlight                  |
 | Insert | hh / HH               | Escape                           |
 | Insert | TAB (Auto-completion) | Auto select the first suggestion |
 | Visual | >                     | Next indent                      |

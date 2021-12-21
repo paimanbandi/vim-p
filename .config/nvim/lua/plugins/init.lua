@@ -15,7 +15,6 @@ return require('packer').startup(function(use)
   use 'pangloss/vim-javascript'
 
   -- snippet
-  use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
   use 'L3MON4D3/LuaSnip'
   use {

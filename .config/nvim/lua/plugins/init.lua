@@ -32,6 +32,8 @@ return require('packer').startup(function(use)
     }
   }
 
+  use 'neovim/nvim-lspconfig'
+
   -- debugging
   use 'Pocco81/DAPInstall.nvim'
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }

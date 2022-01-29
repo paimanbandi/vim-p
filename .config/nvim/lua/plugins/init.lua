@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   -- snippet
   use 'glepnir/lspsaga.nvim'
   use 'L3MON4D3/LuaSnip'
+
   use {
     'hrsh7th/nvim-cmp',
     requires = {
@@ -68,6 +69,13 @@ return require('packer').startup(function(use)
   -- haskell
   use {
     'ndmitchell/ghcid', { rtp = 'plugins/nvim' }
+  }
+
+  -- html
+  use {
+    'mattn/emmet-vim',
+    cmd = 'EmmetInstall',
+    opt = true
   }
 
   -- others

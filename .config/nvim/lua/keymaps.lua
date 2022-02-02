@@ -50,5 +50,5 @@ m("n", "<leader>a", "<Cmd>lua vim.lsp.buf.range_code_action()<CR>", o)
 
 m("n", "<leader>ow", ":FlutterOutlineToggle<CR>", o)
 
-m("n", "<leader>ht", ":%s/></>\r</g<CR>gg=G", o)
+m("n", "<leader>ht", ":set filetype=html<CR>gg=G", o)
 

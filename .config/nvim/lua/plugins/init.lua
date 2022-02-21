@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
   use 'pangloss/vim-javascript'
 
   -- snippet
-  use 'glepnir/lspsaga.nvim'
+  -- use 'glepnir/lspsaga.nvim'
   use 'L3MON4D3/LuaSnip'
 
   use {
@@ -33,7 +33,8 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'neovim/nvim-lspconfig'
+  -- use 'neovim/nvim-lspconfig'
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   -- debugging
   use 'Pocco81/DAPInstall.nvim'
